@@ -46,7 +46,15 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-
+function sumAndMultiply (num1,num2,num3) {
+  var sum = num1 + num2 + num3;
+  var product = num1 * num2 * num3;
+  var sumString = num1 + " and " + num2 + " and " + num3 + ' sum to ' + sum + '.';
+  var productString = 'The product of ' + num1 + ' and ' + num2 + ' and ' + num3 + ' is ' + product + ".";
+  var arr3 =[ sum, product, sumString, productString ];
+  console.log (arr3);
+  return arr3;
+}
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
@@ -96,7 +104,7 @@ function testMultiply() {
 }
 
 function testSumAndMultiply() {
-  if (sumAndMultiply(4, 7, 5)[1] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[2] === 'The product of 4 and 7 and 5 is 140.') {
+  if (sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
     console.log('%c TEST FOR sumAndMultiply() PASSES', 'color: green');
   } else {
     console.log('%c TEST FOR sumAndMultiply() FAILS', 'color: red');
