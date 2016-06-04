@@ -6,11 +6,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum (num1,num2) {
-  var sum=num1+num2;
-  var sumArray =[];
-  var sumString= 'The sum of ' + num1 + ' and ' + num2 + ' is ' + sum + '.';
+  var sum = num1 + num2;
+  var sumArray = [];
+  var sumString = 'The sum of ' + num1 + ' and ' + num2 + ' is ' + sum + '.';
   sumArray.push (sum, sumString);
-  console.log (sumArray)
+  console.log (sumArray);
   return sumArray;
 }
 // Here is the test for sum(); uncomment it to run it
@@ -25,7 +25,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-
+function multiply(num1, num2) {
+  var product = num1 * num2;
+  var productString = 'The product of ' + num1 + ' and ' + num2 + ' is ' + product + '.';
+  var productArray = [];
+  productArray.push(product, productString);
+  console.log (productArray);
+  return productArray;
+}
 // Here is the test for multiply(); uncomment it to run it
 testMultiply(4,7);
 
