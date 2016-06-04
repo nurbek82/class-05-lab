@@ -49,9 +49,9 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply (num1,num2,num3) {
   var sum = num1 + num2 + num3;
   var product = num1 * num2 * num3;
-  var sumString = num1 + " and " + num2 + " and " + num3 + ' sum to ' + sum + '.';
-  var productString = 'The product of ' + num1 + ' and ' + num2 + ' and ' + num3 + ' is ' + product + ".";
-  var arr3 =[ sum, product, sumString, productString ];
+  var sumString = num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' + sum + '.';
+  var productString = 'The product of ' + num1 + ' and ' + num2 + ' and ' + num3 + ' is ' + product + '.';
+  var arr3 = [sum, product, sumString, productString];
   console.log (arr3);
   return arr3;
 }
@@ -68,7 +68,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 testArray = [2,3,4];
-
+function sumArray(array) {
+  var sum = array[0] + array[1] + array[2];
+  var sumString = array[0] + ',' + array[1] + ',' + array[2] + ' was passed in as an array of numbers, and ' + sum + ' is their sum.';
+  var newArray = [sum, sumString];
+  console.log(newArray);
+  return newArray;
+}
 // Here is the test for sumArray(); uncomment it to run it
 testSumArray(testArray);
 
